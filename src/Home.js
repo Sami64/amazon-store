@@ -3,6 +3,9 @@ import React from "react";
 import "./Home.css";
 
 import Product from "./Product";
+import shoe from "./imgs/green.png";
+import kyries from './imgs/pngfind.com-kyrie-irving-png-305296.png';
+import kyrie2 from './imgs/pngfind.com-kyrie-logo-png-4899408.png';
 
 const Home = () => {
   return (
@@ -15,7 +18,7 @@ const Home = () => {
         />
         <div className="home__row">
           <Product
-            id="21124124124"
+            id="211241242"
             title="The lean startup"
             price={29.99}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
@@ -31,18 +34,18 @@ const Home = () => {
         <div className="home__row">
           {" "}
           <Product
-            id="45589105"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-            price={598.99}
+            id="49538094"
+            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
+            price={239.0}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
           />
           <Product
-            id="455891052"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-            price={598.99}
-            rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            id="4903850"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+            price={199.99}
+            rating={3}
+            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
           />
           <Product
             id="4558910512"
@@ -62,21 +65,44 @@ const Home = () => {
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
           />
           <Product
-            id="455891051245"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-            price={598.99}
-            rating={2}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            id="123124"
+            title="Nike KD Zoom"
+            price={54.99}
+            image={shoe}
           />{" "}
         </div>
         <div className="home__row">
           {" "}
           <Product
-            id="455245"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-            price={598.99}
+            id="90829332"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+            price={1094.98}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+          />{" "}
+        </div>
+        <div className="home__row">
+          {" "}
+          <Product
+            id="908232"
+            title="Nike Kyrie 5"
+            price={94.97}
+            rating={5}
+            image="https://d3pnpe87i1fkwu.cloudfront.net/IMG/nike-kyrie-5-ao2918-901_2048x2048.png"
+          />{" "}
+          <Product
+            id="9012350332"
+            title="Kyrie Maroon Mens Basketball Shoes"
+            price={84.98}
+            rating={4}
+            image={kyries}
+          />{" "}
+          <Product
+            id="908569332"
+            title="Kyrie 2"
+            price={94.00}
+            rating={5}
+            image={kyrie2}
           />{" "}
         </div>
       </div>

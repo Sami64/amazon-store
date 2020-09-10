@@ -9,7 +9,15 @@
   max-height: 400px;
   min-width: 100px;
   background-color: white;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
   z-index: 1;
+}
+
+.product:hover {
+  background-color: lightgrey;
 }
 
 .product > img {
@@ -34,9 +42,16 @@
 }
 
 .product > button {
+  font-size: large;
+  padding: 10px;
   background: #f0c14b;
-  border: 1px solid;
-  margin-top: 10px;
+  border: 1px none;
+  margin-top: 20px;
+  border-radius: 15px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+}
+
+.product > button:hover {
+  cursor: pointer;
 }

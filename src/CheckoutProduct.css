@@ -1,7 +1,14 @@
 .checkoutProduct {
   display: flex;
+  background: darkgray;
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: darkgrey;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 25px;
 }
 
 .checkoutProduct__info {
