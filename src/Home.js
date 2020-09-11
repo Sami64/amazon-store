@@ -3,9 +3,8 @@ import React from "react";
 import "./Home.css";
 
 import Product from "./Product";
-import shoe from "./imgs/green.png";
-import kyries from './imgs/pngfind.com-kyrie-irving-png-305296.png';
-import kyrie2 from './imgs/pngfind.com-kyrie-logo-png-4899408.png';
+import kyries from "./imgs/pngfind.com-kyrie-irving-png-305296.png";
+import kyrie2 from "./imgs/pngfind.com-kyrie-logo-png-4899408.png";
 
 const Home = () => {
   return (
@@ -25,6 +24,7 @@ const Home = () => {
             rating={5}
           />
           <Product
+            id="54821349"
             title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
             price={98.99}
             rating={5}
@@ -64,12 +64,6 @@ const Home = () => {
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
           />
-          <Product
-            id="123124"
-            title="Nike KD Zoom"
-            price={54.99}
-            image={shoe}
-          />{" "}
         </div>
         <div className="home__row">
           {" "}
@@ -92,17 +86,17 @@ const Home = () => {
           />{" "}
           <Product
             id="9012350332"
-            title="Kyrie Maroon Mens Basketball Shoes"
+            title="Kyrie 3 Samurai"
             price={84.98}
             rating={4}
-            image={kyries}
+            image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3_HyOwqWApZ2p6cZp1NvYd_uO0FJEzr6ojQ&usqp=CAU"
           />{" "}
           <Product
             id="908569332"
-            title="Kyrie 2"
-            price={94.00}
+            title="Kyrie 4"
+            price={94.0}
             rating={5}
-            image={kyrie2}
+            image="https://images-na.ssl-images-amazon.com/images/I/81EQw-JI65L._AC_UX395_.jpg"
           />{" "}
         </div>
       </div>
