@@ -7,6 +7,12 @@ import Checkout from "./Checkout";
 import { auth } from "./firebase";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import Payment from "./Payment";
+import Orders from "./Orders";
+
+const promise = loadStripe("pk_test_IDGmEnCSRqu7vS9C0IgtIR3i00yaHRTtzI");
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -14,18 +20,18 @@ function App() {
     auth.onAuthStateChanged((authUser) => {
       console.log(`User is ${authUser}`);
 
-      if(authUser){
+      if (authUser) {
         dispatch({
-          type: 'SET_USER',
-          user: authUser
-        })
+          type: "SET_USER",
+          user: authUser,
+        });
       } else {
         dispatch({
-          type: 'SET_USER',
-          user: null
-        })
+          type: "SET_USER",
+          user: null,
+        });
       }
-    })
+    });
   }, []);
   return (
     <Router>
@@ -37,6 +43,16 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
+          </Route>
+          <Route path="/orders">
+            <Header />
+            <Orders />
           </Route>
           <Route path="/">
             <Header />
